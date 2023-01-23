@@ -3,7 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Legal Solutions</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/896bf47389.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -15,10 +27,158 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="container px-3 py-3">
       <!-- nav -->
-      <nav></nav>
+      <div class="mb-5">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand font-garamond fs-1" href="#"
+              ><img src="images/logo-1.png" alt="" />Justice</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 text-light-emphasis font-poppins"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Home <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Services <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    >Cases <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    >Blog <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"
+                    >Contact Us <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+              <button
+                class="btn bg-danger text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#consultationModal"
+              >
+                Free Consultation
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="consultationModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Free Consultation
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleFormControlInput1"
+                          placeholder="Enter your email"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Your Query</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          placeholder="Enter your queary"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
       <!-- banner -->
+      <div>
+        <div class="md:w-50 mx-auto carousel-caption">
+          <div>
+            <h1 class="display-2">We Provide Effective Legal Solutions</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="text"
+                  name="services"
+                  id=""
+                  class="form-control"
+                  placeholder="Search your services"
+                />
+              </div>
+              <div class="col 3">
+                <button class="btn bg-danger text-white">
+                  Free Consultation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="w-100 img-fluid" src="images/banner.png" alt="" />
+      </div>
     </header>
     <!-- main section -->
     <main></main>

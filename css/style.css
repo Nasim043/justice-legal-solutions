@@ -1,0 +1,12 @@
+.font-garamond {
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.cs-bg-img {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  height: 100%;
+}
