@@ -46,6 +46,9 @@
 .cs-w-85 {
   width: 85%;
 }
+.cs-contact-bg {
+  background: #f3f3f3;
+}
 
 /* media queries */
 @media (max-width: 576px) {
