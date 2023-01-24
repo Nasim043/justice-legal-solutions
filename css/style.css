@@ -32,6 +32,10 @@
 .cs-bd-all {
   border: 0;
 }
+.cs-btn-bg,
+.cs-btn-bg:hover {
+  background: #b68c5a;
+}
 
 /* media queries */
 @media (max-width: 576px) {
